@@ -1,0 +1,88 @@
+/* Contact Section */
+.contact {
+    padding: 60px 40px;
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #0073ff;
+}
+
+.cta-button {
+    padding: 15px 25px;
+    background-color: #0073ff;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #005bcc;
+}
+
+/* Responsive for Contact Section */
+@media (max-width: 768px) {
+    .contact-content {
+        text-align: center;
+    }
+}
+
+.contact-info {
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #0073ff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.cta-button.loading {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.cta-button.loading::after {
+    content: " Sending...";
+}

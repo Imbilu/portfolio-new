@@ -1,0 +1,110 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #f1f1f1; /* Light text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #242424; /* Darker background for header */
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f1f1f1; /* Light text for logo */
+}
+.navbar ul {
+    display: flex;
+    margin-right: auto;
+    gap: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.2s ease;
+    color: #ffffff; /* Light text for navigation links */
+}
+.navbar ul li a:hover {
+    color: #0073ff; /* Blue color on hover */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    height: 90vh;
+    background: linear-gradient(
+        135deg,
+        #1f1f1f 0%,
+        #333333 100%
+    ); /* Dark gradient background */
+}
+.hero-content {
+    max-width: 50%;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #ffffff; /* Light color for heading */
+}
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: #cccccc; /* Lighter gray for paragraph */
+}
+.cta-button {
+    padding: 15px 25px;
+    background-color: #0073ff; /* Bright CTA button */
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #005bcc; /* Darker blue on hover */
+}
+.hero-image img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Soft shadow for the image */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        max-width: 100%;
+    }
+    .hero-image {
+        margin-top: 20px;
+    }
+}
